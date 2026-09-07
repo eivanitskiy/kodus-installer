@@ -2,7 +2,7 @@ services:
   kodus-web:
     image: ${KODUS_REGISTRY:-ghcr.io/kodustech}/kodus-ai-web:${IMAGE_TAG:-latest}
     ports:
-      - "3000:3300"
+      - "3300:3000"
     environment:
       - NODE_ENV=production
     networks:
