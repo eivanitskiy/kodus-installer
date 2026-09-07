@@ -1,9 +1,6 @@
 services:
   kodus-web:
     image: ${KODUS_REGISTRY:-ghcr.io/kodustech}/kodus-ai-web:${IMAGE_TAG:-latest}
-    container_name: kodus-web-prod
-    ports:
-      - "${WEB_PORT}:${WEB_PORT}"
     environment:
       - NODE_ENV=production
     networks:
